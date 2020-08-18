@@ -1,0 +1,50 @@
+body { /*befehl bezieht sich komplett auf Body*/
+    /*background-color: lime;/* Hintergrundfarbe*/
+    /*background-image: url("../papagei.jpg");*/ /* Hintergrundbild*/
+    background-repeat: no-repeat; /* repeat-x auf x achse wiederholen, repeat-y auf y achse wiederholen, no-repeat bild wird nur einmal angezeigt */
+    background-position: bottom; /* Position eines Bildes festlegen */
+    font-size: 16px;
+}
+#p1{ /*# deutet auf eine id hin <p id="p1"></p> zb, id ist eindeutig und sollte/kann nur einmal benutzt werden*/
+    color:black;
+}
+.p2{ /* . deutet auf eine clase hin <p class="p2"></p>, class kann mehrmals verwendet werden*/
+    color: darkorange;
+}
+p{ /*man kann auch einer klasse eine id zuweisen class="" id="", von der Rangfolge her ist das Tag < class < id, id ist am stärksten*/
+    color: black;
+    text-align: justify; /* justify ist block ausgabe */
+    /* text-indent: 50px;  rückt die erste zeile eines paragraphen um zb 50px ein */
+    letter-spacing: 0px; /* abstand zwischen den buchstaben, */
+}
+.farbe{
+    color: red;
+    color: rgb(255, 200, 83);
+    color: #A039FF;
+}
+
+#div1{
+    background-color: red;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    position: absolute;
+    width: 50%;
+}
+/*
+a:link{
+    color: red; /* farbe eines noch nicht besuchten links ändern, es gibt noch a:vistited, a:hover, a:active
+}*/
+a:link, a:visited{
+    background-color: lightgrey;
+    border-style: solid;
+    color: green;
+    padding: 5px 5px 5px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover{
+    background-color: green;
+    color: lightgrey;
+}

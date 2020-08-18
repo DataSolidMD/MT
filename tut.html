@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML Tutorial</title>
+    <meta name="keywords" content="HTML, Form"> <!--keywords wie wird die seite gefunden...content sind die keywords-->
+    <meta name="description" content="Dies ist eine Testbeschreibung">
+    <meta charset="UTF-8"> <!--brauch man nicht unbedingt. gibt nur an wie die seite aufgebaut wird vom text-->
+    <meta name="author" content="Matthias">
+    <meta http-equiv="refresh" content="20"> <!--automatisch neu laden der webseite, alle je nach content eingegebene Zeit-->
+
+
+</head>
+<body>
+    <!--
+    <form action="zielseite.php" target="_blank">
+        vorname:<input type="text" name="vorname" readonly="readonly" required="on"><br/> readonly und disabled="disabled", required zwingt dieses Feld auszufüllen.es gilt nur pro input feld
+        nachname:<input type="text" name="nachname" size="30" maxlength="10"><br/> size ist größe des eingabefeldes, maxlength anzahl max. zeichen
+        password:<input type="password" name="password"><br/>
+        <input type="radio" name="geschlecht" value="w">Weiblich<br/>
+        <input type="radio" name="geschlecht" value="m">M&aumlnnlich<br/>
+        <input type="radio" name="geschlecht" value="d">Diverse<br/>
+        <input type="checkbox" name="kannHTML" value="true">Ich kann HTML<br/>
+        <input type="checkbox" name="kannCSS" value="true">Ich kann CSS<br/>
+        <input type="color" name="farbe"><br/>
+        <input type="url" name="website" autofocus="on"><br/> autofocus standardmässig off, on setzt cursor in dieses Feld. kann nur einmal verwendet werden
+        <input type="file" name="img" multiple="on"><br/> mit multiple on kann man mehrere dateien auswählen.
+                                                        autocomplete standardmässig on, off kann man im suchefeld zb nichts vervollständigen
+        <input type="button" onclick="alert('du hast einen Button geklickt')" value="Klick mich Button">
+
+        <input type="submit" value="Klick mich!">
+    </form>
+    
+    <iframe width="640" height="480" src="https://www.youtube.com/embed/a_4v7HwtClI"> einbinden eines Youtube Videos
+                hinter den link können noch commands wie ?autoplay=1 oder 0 oder ?controls=1 oder 0 stehen
+    </iframe>
+    -->
+    <!-- SVG Grafiken, unendlich reinzoomen ohne das die grafik verpixelt-->
+    <svg width="500" height="800">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="6" fill="red"></circle> <!--Kreis zeichnen-->
+        <rect x="20" y="100" rx="50" ry="50" width="150" height="75" stroke="yellow" stroke-width="10"></rect> <!-- Rechteck mit abgerundeten ecken, ohne abrundung einfach rx und ry weglassen-->
+        <polygon points="50,200 150,300 200,200" stroke="blue" stroke-width="6"></polygon> <!--Dreickeck zeichnen-->
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%"> <!--x1, x2, y1, y2 Position und richtung des Farbverlaufes-->
+                <stop offset="0%" style="stop-color: rgb(255, 103, 2);" /> <!--farbverlauf in die Ellipse bekommen-->
+                <stop offset="50%" style="stop-color: rgb(2, 255, 15);" />
+                <stop offset="100%" style="stop-color: rgb(132, 0, 255);" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="70" cy="450" rx="65" ry="112" fill="url(#gradient)" /> <!--Ellipse zeichnen, fill übergibt die id gradient-->
+    </svg>
+</body>
+</html>
